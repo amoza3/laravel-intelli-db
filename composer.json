@@ -56,7 +56,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "amoza3\\LaravelIntelliDb\\LaravelIntelliDbServiceProvider"
+                "Amoza3\\LaravelIntelliDb\\LaravelIntelliDbServiceProvider"
             ]
         }
     }
