@@ -1,0 +1,62 @@
+{
+    "name": "amoza3/laravel-intelli-db",
+    "description": "An AI-driven Laravel package for generating and managing database related things.",
+    "keywords": [
+        "amoza3",
+        "laravel",
+        "intelli-db",
+        "ai",
+        "database",
+        "factories",
+        "migrations",
+        "models",
+        "rules",
+        "seeders"
+    ],
+    "homepage": "https://github.com/amoza3/laravel-intelli-db",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ali Hossinzadeh",
+            "email": "php.modern@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.8",
+        "orchestra/testbench": "^8.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amoza3\\LaravelIntelliDb\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amoza3\\LaravelIntelliDb\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "amoza3\\LaravelIntelliDb\\LaravelIntelliDbServiceProvider"
+            ]
+        }
+    }
+}
