@@ -8,6 +8,7 @@ use Amoza3\LaravelIntelliDb\Console\AiMigrationCommand;
 use Amoza3\LaravelIntelliDb\Console\AiModelCommand;
 use Amoza3\LaravelIntelliDb\Console\AiRuleCommand;
 use Amoza3\LaravelIntelliDb\Console\AiRepositoryCommand;
+use Amoza3\LaravelIntelliDb\Console\AiRepositoryServiceCommand;
 
 class LaravelIntelliDbServiceProvider extends ServiceProvider
 {
@@ -27,6 +28,7 @@ class LaravelIntelliDbServiceProvider extends ServiceProvider
                 AiFactoryCommand::class,
                 AiModelCommand::class,
                 AiRepositoryCommand::class,
+                AiRepositoryServiceCommand::class,
             ]);
         }
     }
