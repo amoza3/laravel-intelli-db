@@ -16,7 +16,7 @@
     "homepage": "https://github.com/amoza3/laravel-intelli-db",
     "license": "MIT",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Ali Hossinzadeh",
@@ -53,7 +53,7 @@
     "config": {
         "sort-packages": true
     },
-    
+
     "extra": {
         "laravel": {
             "providers": [
