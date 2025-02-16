@@ -15,6 +15,7 @@ use Symfony\Component\Console\Input\InputArgument;
  *   --description="ایجاد ریپازیتوری و سرویس برای کاربران"
  *   --model=User
  */
+
 class AiRepositoryServiceCommand extends Command
 {
     /**
