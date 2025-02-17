@@ -172,11 +172,59 @@ To create a model named Address, run:
 php artisan ai:model Address
 ```
 
+
+### ai:repo-service
+
+
+You can provide the description of the repository/service using the `--description` option:
+
+
+
+```
+php artisan ai:repo-service YourEntityName
+```
+
+php artisan ai:repo-service YourEntityName --description="Create repository and service for managing users"
+
+
+You can also specify a model with the `--model` option:
+
+```
+php artisan ai:repo-service YourEntityName --model=User
+```
+
+If you want to generate a model as well, use the `--create-model` option:
+
+```
+php artisan ai:repo-service YourEntityName --create-model
+```
+
+The generated files will be placed in the following directories:
+- `app/Repositories/Contracts/{YourEntityName}RepositoryInterface.php`
+- `app/Repositories/{EloquentYourEntityName}Repository.php`
+- `app/Services/{YourEntityName}Service.php`
+- `app/Models/{YourEntityName}.php` (if `--create-model` is used)
+
+### ai:middleware
+
+To create a new middleware using AI, run the following command:
+
+```
+php artisan ai:middleware YourMiddlewareName
+```
+
+You can provide the description of the middleware using the `--description` option:
+
+
+
 ### Testing
 
 ```bash
 composer test
 ```
+
+
+
 
 ### Changelog
 

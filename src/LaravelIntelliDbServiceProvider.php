@@ -3,10 +3,11 @@
 namespace Amoza3\LaravelIntelliDb;
 
 use Illuminate\Support\ServiceProvider;
+use Amoza3\LaravelIntelliDb\Console\AiRuleCommand;
+use Amoza3\LaravelIntelliDb\Console\AiModelCommand;
 use Amoza3\LaravelIntelliDb\Console\AiFactoryCommand;
 use Amoza3\LaravelIntelliDb\Console\AiMigrationCommand;
-use Amoza3\LaravelIntelliDb\Console\AiModelCommand;
-use Amoza3\LaravelIntelliDb\Console\AiRuleCommand;
+use Amoza3\LaravelIntelliDb\Console\AiMiddlewareCommand;
 use Amoza3\LaravelIntelliDb\Console\AiRepositoryCommand;
 use Amoza3\LaravelIntelliDb\Console\AiRepositoryServiceCommand;
 
@@ -29,6 +30,7 @@ class LaravelIntelliDbServiceProvider extends ServiceProvider
                 AiModelCommand::class,
                 AiRepositoryCommand::class,
                 AiRepositoryServiceCommand::class,
+                AiMiddlewareCommand::class,
             ]);
         }
     }
